@@ -1,0 +1,777 @@
+
+/* =========================================
+   SURESH MASALA - ABOUT PAGE CSS
+   Theme: Mustard Gold, Brown & Cream
+========================================= */
+
+:root {
+    --primary: #D99B24;
+    --secondary: #5A3522;
+    --background: #FFF3D9;
+    --accent: #A65B32;
+    --white: #FFFFFF;
+    --text: #342116;
+    --muted: #756459;
+}
+
+
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.about-hero,
+.about-story,
+.owner-section,
+.about-values,
+.delivery-section,
+.why-choose,
+.about-cta {
+    width: 100%;
+}
+
+
+/* =========================================
+   ABOUT HERO
+========================================= */
+
+.about-hero {
+    min-height: 520px;
+    padding: 100px 8%;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(52, 33, 22, 0.93),
+            rgba(52, 33, 22, 0.55)
+        ),
+        url("images/hero-masala.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-hero-content {
+    max-width: 680px;
+    color: var(--white);
+}
+
+.about-tag,
+.section-tag {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.about-hero h1 {
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.2;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+.about-hero h1 span {
+    color: var(--primary);
+}
+
+.about-hero p {
+    max-width: 570px;
+    color: #F5E9DC;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+
+/* BUTTON */
+
+.about-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 14px 25px;
+
+    background: var(--primary);
+    color: var(--text);
+
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.about-btn:hover {
+    background: var(--white);
+    color: var(--secondary);
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   OUR BUSINESS / STORY
+========================================= */
+
+.about-story {
+    padding: 90px 8%;
+    background: var(--background);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+
+/* STORY IMAGE */
+
+.about-image {
+    position: relative;
+    width: 100%;
+}
+
+.about-image img {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(52, 33, 22, 0.15);
+}
+
+.image-label {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+
+    padding: 13px 18px;
+
+    background: var(--white);
+    color: var(--secondary);
+
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 700;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.image-label i {
+    color: var(--primary);
+    margin-right: 7px;
+}
+
+
+/* STORY TEXT */
+
+.about-text h2 {
+    color: var(--secondary);
+    font-size: clamp(29px, 4vw, 41px);
+    line-height: 1.3;
+    margin-bottom: 22px;
+}
+
+.about-text h2 span {
+    color: var(--accent);
+}
+
+.about-text p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 17px;
+}
+
+.about-text .about-btn {
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   OWNER PROFILE SECTION
+========================================= */
+
+.owner-section {
+    padding: 90px 8%;
+    background: var(--white);
+}
+
+.owner-container {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    align-items: center;
+    gap: 65px;
+}
+
+
+/* OWNER PHOTO */
+
+.owner-photo {
+    width: 100%;
+    max-width: 380px;
+    margin: auto;
+
+    padding: 10px;
+
+    background: var(--background);
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(90,53,34,0.12);
+}
+
+.owner-photo img {
+    display: block;
+    width: 100%;
+    height: 420px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 12px;
+}
+
+
+/* OWNER CONTENT */
+
+.owner-content h2 {
+    color: var(--secondary);
+    font-size: clamp(29px, 4vw, 41px);
+    line-height: 1.3;
+    margin: 12px 0 20px;
+}
+
+.owner-content h2 span {
+    color: var(--accent);
+}
+
+.owner-content p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 16px;
+}
+
+.owner-sign {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 25px;
+
+    color: var(--secondary);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.owner-sign i {
+    color: var(--primary);
+    font-size: 25px;
+}
+
+
+/* =========================================
+   WEBSITE PRODUCTS / VALUES
+========================================= */
+
+.about-values {
+    padding: 85px 8%;
+    background: var(--background);
+}
+
+
+/* SECTION HEADING */
+
+.about-heading {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.about-heading h2 {
+    color: var(--secondary);
+    font-size: clamp(30px, 4vw, 40px);
+    margin: 12px 0;
+}
+
+.about-heading h2 span {
+    color: var(--accent);
+}
+
+.about-heading p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* PRODUCT CARDS */
+
+.values-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.value-card {
+    padding: 35px 20px;
+    text-align: center;
+
+    background: var(--white);
+    border: 1px solid #F0DFC1;
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+
+    border-color: var(--primary);
+
+    box-shadow: 0 12px 25px rgba(90,53,34,0.12);
+}
+
+.value-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary);
+    color: var(--white);
+
+    font-size: 27px;
+    border-radius: 50%;
+
+    transition: 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+    background: var(--secondary);
+    transform: rotate(8deg);
+}
+
+.value-card h3 {
+    color: var(--secondary);
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.value-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   DELIVERY AREAS
+========================================= */
+
+.delivery-section {
+    padding: 85px 8%;
+    background: var(--white);
+}
+
+.delivery-container {
+    max-width: 1050px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.delivery-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 20px 12px;
+
+    background: var(--background);
+    border: 1px solid #F0DFC1;
+    border-radius: 10px;
+
+    color: var(--secondary);
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.delivery-area i {
+    color: var(--primary);
+    font-size: 17px;
+}
+
+.delivery-area:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+
+    box-shadow: 0 8px 20px rgba(90,53,34,0.1);
+}
+
+.delivery-note {
+    margin-top: 30px;
+    text-align: center;
+
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.delivery-note i {
+    color: var(--primary);
+    margin-right: 5px;
+}
+
+
+/* =========================================
+   WHY CHOOSE US
+========================================= */
+
+.why-choose {
+    padding: 90px 8%;
+    background: var(--background);
+}
+
+.why-content {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+
+/* WHY TEXT */
+
+.why-text h2 {
+    color: var(--secondary);
+    font-size: clamp(30px, 4vw, 41px);
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.why-text h2 span {
+    color: var(--accent);
+}
+
+.why-text > p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+
+/* WHY POINTS */
+
+.why-point {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 17px;
+
+    color: var(--secondary);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.why-point i {
+    color: #4B8B38;
+    font-size: 19px;
+}
+
+
+/* WHY IMAGE */
+
+.why-image img {
+    display: block;
+    width: 100%;
+    height: 380px;
+
+    object-fit: cover;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(52,33,22,0.15);
+}
+
+
+/* =========================================
+   CALL TO ACTION
+========================================= */
+
+.about-cta {
+    padding: 75px 8%;
+    text-align: center;
+
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.about-cta h2 {
+    font-size: clamp(25px, 4vw, 38px);
+    margin-bottom: 15px;
+}
+
+.about-cta p {
+    color: #F0DFD0;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .about-container,
+    .why-content {
+        gap: 35px;
+    }
+
+    .values-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .delivery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* HERO */
+
+    .about-hero {
+        min-height: 440px;
+        padding: 75px 6%;
+        background-position: center;
+    }
+
+    .about-hero h1 {
+        font-size: 36px;
+    }
+
+    .about-hero p {
+        font-size: 14px;
+    }
+
+
+    /* SECTION SPACING */
+
+    .about-story,
+    .owner-section,
+    .about-values,
+    .delivery-section,
+    .why-choose {
+        padding: 60px 6%;
+    }
+
+
+    /* STORY */
+
+    .about-container,
+    .why-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-image img {
+        height: 320px;
+    }
+
+    .about-text h2,
+    .why-text h2,
+    .owner-content h2 {
+        font-size: 30px;
+    }
+
+
+    /* OWNER */
+
+    .owner-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .owner-photo {
+        max-width: 320px;
+    }
+
+    .owner-photo img {
+        height: 350px;
+    }
+
+
+    /* PRODUCTS */
+
+    .values-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .value-card {
+        padding: 25px 14px;
+    }
+
+    .value-card h3 {
+        font-size: 15px;
+    }
+
+    .value-card p {
+        font-size: 12px;
+    }
+
+
+    /* DELIVERY */
+
+    .delivery-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .delivery-area {
+        font-size: 12px;
+        padding: 17px 8px;
+    }
+
+
+    /* WHY IMAGE */
+
+    .why-image img {
+        height: 300px;
+    }
+
+
+    /* CTA */
+
+    .about-cta {
+        padding: 60px 6%;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .about-hero {
+        min-height: 410px;
+    }
+
+    .about-hero h1 {
+        font-size: 31px;
+    }
+
+    .about-tag,
+    .section-tag {
+        font-size: 12px;
+    }
+
+    .about-image img {
+        height: 260px;
+    }
+
+    .image-label {
+        left: 10px;
+        bottom: 10px;
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    .owner-photo img {
+        height: 320px;
+    }
+
+    .values-container {
+        grid-template-columns: 1fr;
+    }
+
+    .value-card {
+        padding: 28px 20px;
+    }
+
+    .delivery-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .why-image img {
+        height: 250px;
+    }
+
+    .about-btn {
+        padding: 12px 18px;
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================
+   EXTRA SMALL MOBILE
+========================================= */
+
+@media (max-width: 350px) {
+
+    .delivery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero h1 {
+        font-size: 27px;
+    }
+
+}

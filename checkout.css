@@ -1,0 +1,374 @@
+
+/* =====================================
+   SURESH MASALA - CHECKOUT FORM
+===================================== */
+
+.checkout-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px 20px;
+    background: #FFF3D9;
+}
+
+.checkout-container {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(90, 53, 34, 0.10);
+}
+
+
+/* =====================================
+   CHECKOUT HEADING
+===================================== */
+
+.checkout-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.checkout-heading span {
+    display: block;
+    color: #A65B32;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.checkout-heading h1 {
+    color: #5A3522;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.checkout-heading p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   FORM SECTION HEADING
+===================================== */
+
+#checkoutForm h2 {
+    color: #5A3522;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 30px 0 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+#checkoutForm h2 i {
+    color: #D99B24;
+    margin-right: 10px;
+}
+
+
+/* =====================================
+   INPUT FIELDS
+===================================== */
+
+.form-group {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    color: #342116;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    color: #342116;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #D99B24;
+    box-shadow: 0 0 0 3px rgba(217, 155, 36, 0.12);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+/* =====================================
+   PAYMENT OPTIONS
+===================================== */
+
+.payment-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.payment-options label {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 17px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    color: #342116;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.payment-options label:hover {
+    border-color: #D99B24;
+    background: #FFFAF0;
+}
+
+.payment-options input {
+    width: 17px;
+    height: 17px;
+    accent-color: #D99B24;
+    cursor: pointer;
+}
+
+.payment-options i {
+    color: #A65B32;
+    font-size: 19px;
+}
+
+
+/* =====================================
+   WHATSAPP BUTTON
+===================================== */
+
+.whatsapp-order-btn {
+    width: 100%;
+    padding: 17px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #25D366;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-order-btn i {
+    font-size: 21px;
+    margin-right: 10px;
+}
+
+.whatsapp-order-btn:hover {
+    background: #1DA851;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(37, 211, 102, 0.25);
+}
+
+
+/* =====================================
+   SECURITY NOTE
+===================================== */
+
+.checkout-note {
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.checkout-note i {
+    color: #25D366;
+    margin-right: 5px;
+}
+
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+
+    .checkout-section {
+        padding: 40px 18px;
+    }
+
+    .checkout-container {
+        padding: 30px 25px;
+    }
+
+    .checkout-heading h1 {
+        font-size: 29px;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 480px) {
+
+    .checkout-section {
+        padding: 25px 12px;
+    }
+
+    .checkout-container {
+        padding: 25px 16px;
+        border-radius: 12px;
+    }
+
+    .checkout-heading {
+        margin-bottom: 30px;
+    }
+
+    .checkout-heading h1 {
+        font-size: 25px;
+    }
+
+    .checkout-heading p {
+        font-size: 14px;
+    }
+
+    #checkoutForm h2 {
+        font-size: 19px;
+        margin-top: 25px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 13px;
+        font-size: 14px;
+    }
+
+    .payment-options {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .payment-options label {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .whatsapp-order-btn {
+        padding: 15px 10px;
+        font-size: 15px;
+    }
+
+}
+
+/* CHECKOUT FOOTER */
+
+.footer {
+    width: 100%;
+    background: #5A3522;
+    color: #FFFFFF;
+    padding: 55px 8% 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    padding-bottom: 40px;
+}
+
+.footer-box h3 {
+    color: #D99B24;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-box p {
+    color: #f1e9e2;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+.footer-box a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 13px;
+    transition: 0.3s;
+}
+
+.footer-box a:hover {
+    color: #D99B24;
+    padding-left: 5px;
+}
+
+.footer-box i {
+    color: #D99B24;
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-bottom p {
+    color: #eee;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Responsive Footer */
+
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .footer {
+        padding: 40px 22px 0;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}

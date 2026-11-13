@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://sureshmasalakajra.netlify.app/sitemap.xml

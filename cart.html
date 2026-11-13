@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | Suresh Masala - Kajra Bazar</title>
+
+    <meta name="description"
+        content="Review your selected fresh desi masala and pure mustard oil products from Suresh Masala, Kajra Bazar.">
+
+    <!-- Main Website CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Cart Page CSS -->
+    <link rel="stylesheet" href="cart.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ==============================
+         CART PAGE HEADER
+    ============================== -->
+
+    <header class="cart-header">
+
+        <div class="cart-header-container">
+
+            <a href="index.html" class="cart-logo">
+                <i class="fa-solid fa-leaf"></i>
+
+                <div>
+                    <h2>Suresh Masala</h2>
+                    <span>KAJRA BAZAR</span>
+                </div>
+            </a>
+
+            <a href="index.html" class="continue-shopping">
+                <i class="fa-solid fa-arrow-left"></i>
+                Continue Shopping
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==============================
+         CART MAIN SECTION
+    ============================== -->
+
+    <main class="cart-main">
+
+        <div class="cart-page-heading">
+
+            <span class="cart-subtitle">
+                <i class="fa-solid fa-basket-shopping"></i>
+                YOUR SHOPPING BAG
+            </span>
+
+            <h1>Shopping <span>Cart</span></h1>
+
+            <p>
+                Review your selected products before placing your order.
+            </p>
+
+        </div>
+
+
+        <div class="cart-layout">
+
+
+            <!-- ==============================
+                 CART PRODUCT LIST
+            ============================== -->
+
+            <section class="cart-products">
+
+                <div class="cart-section-heading">
+
+                    <h2>Your Items</h2>
+
+                    <span>
+                        <i class="fa-solid fa-box-open"></i>
+                        Selected Products
+                    </span>
+
+                </div>
+
+
+                <!-- JavaScript will display cart products here -->
+
+                <div id="cartItems">
+
+                    <div class="empty-cart">
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                        <h3>Your Cart is Empty</h3>
+
+                        <p>
+                            You haven't added any products to your cart yet.
+                        </p>
+
+                        <a href="index.html#products">
+                            Explore Products
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==============================
+                 ORDER BILLING SUMMARY
+            ============================== -->
+
+            <aside class="cart-billing">
+
+                <div class="billing-heading">
+
+                    <i class="fa-solid fa-receipt"></i>
+
+                    <h2>Order Summary</h2>
+
+                </div>
+
+
+                <div class="billing-details">
+
+                    <div class="billing-row">
+
+                        <span>Subtotal</span>
+
+                        <strong>
+                            ₹<span id="cartSubtotal">0.00</span>
+                        </strong>
+
+                    </div>
+
+
+                    <div class="billing-row">
+
+                        <span>Delivery Charge</span>
+
+                        <strong>
+                            ₹<span id="deliveryTotal">0.00</span>
+                        </strong>
+
+                    </div>
+
+
+                    <div class="delivery-information">
+
+                        <i class="fa-solid fa-truck-fast"></i>
+
+                        <span>
+                            Flat ₹22 delivery charge per order.
+                        </span>
+
+                    </div>
+
+
+                    <div class="billing-total">
+
+                        <span>Grand Total</span>
+
+                        <strong>
+                            ₹<span id="grandTotal">0.00</span>
+                        </strong>
+
+                    </div>
+
+
+                    <button type="button" class="checkout-btn" id="checkoutBtn">
+
+                        Proceed to Checkout
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <a href="index.html#products" class="back-to-products">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        Continue Shopping
+
+                    </a>
+
+                </div>
+
+
+                <div class="cart-trust">
+
+                    <div>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Trusted Quality</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-leaf"></i>
+                        <span>Fresh Products</span>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- ==============================
+         CART PAGE FOOTER
+    ============================== -->
+
+    <footer class="cart-footer">
+
+        <p>
+            © 2026 <strong>Suresh Masala</strong>, Kajra Bazar.
+            All Rights Reserved.
+        </p>
+
+        <span>Freshness in Every Taste!</span>
+
+    </footer>
+
+
+    <!-- ==============================
+         JAVASCRIPT FILES
+    ============================== -->
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+
+</body>
+
+</html>

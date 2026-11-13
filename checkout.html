@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Suresh Masala</title>
+
+    <!-- Existing Homepage CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Checkout CSS -->
+    <link rel="stylesheet" href="checkout.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= CHECKOUT FORM ================= -->
+
+    <section class="checkout-section">
+
+        <div class="checkout-container">
+
+            <div class="checkout-heading">
+                <span>Almost There!</span>
+                <h1>Complete Your Order</h1>
+                <p>
+                    Fill in your delivery details and place your
+                    order directly through WhatsApp.
+                </p>
+            </div>
+
+
+            <form id="checkoutForm">
+
+                <!-- Customer Details -->
+
+                <h2>
+                    <i class="fa-solid fa-user"></i>
+                    Customer Details
+                </h2>
+
+                <div class="form-group">
+                    <label for="customerName">Full Name *</label>
+                    <input type="text"
+                        id="customerName"
+                        placeholder="Enter your full name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerPhone">Mobile Number *</label>
+                    <input type="tel"
+                        id="customerPhone"
+                        placeholder="Enter 10-digit mobile number"
+                        pattern="[6-9][0-9]{9}"
+                        maxlength="10"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerAddress">Full Address *</label>
+                    <textarea id="customerAddress"
+                        rows="3"
+                        placeholder="House number, street, post office..."
+                        required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerVillage">Village / Area *</label>
+                    <input type="text"
+                        id="customerVillage"
+                        placeholder="Enter your village or area"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerLandmark">Landmark</label>
+                    <input type="text"
+                        id="customerLandmark"
+                        placeholder="Nearby school, temple, shop etc.">
+                </div>
+
+
+                <!-- Payment Method -->
+
+                <h2>
+                    <i class="fa-solid fa-credit-card"></i>
+                    Payment Method
+                </h2>
+
+                <div class="payment-options">
+
+                    <label>
+                        <input type="radio"
+                            name="payment"
+                            value="Cash on Delivery"
+                            checked>
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        Cash on Delivery
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                            name="payment"
+                            value="UPI Payment">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        UPI Payment
+                    </label>
+
+                </div>
+
+
+                <!-- Submit Button -->
+
+                <button type="submit" class="whatsapp-order-btn">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Place Order on WhatsApp
+                </button>
+
+                <p class="checkout-note">
+                    <i class="fa-solid fa-lock"></i>
+                    Your details will be shared through WhatsApp.
+                </p>
+
+            </form>
+
+        </div>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-box">
+            <h3>Suresh Masala</h3>
+            <p>
+                Bringing fresh spices and traditional taste
+                to your kitchen. Quality and trust in every product.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="index.html#products">Products</a>
+            <a href="about.html">About</a>
+            <a href="index.html#process">Our Process</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+            <h3>Contact Information</h3>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                8825190223
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                rahulkmkjh@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Kajra Bazar, Bihar
+            </p>
+        </div>
+
+        <!-- Location -->
+        <div class="footer-box">
+            <h3>Our Location</h3>
+
+            <p>Suresh Kirana Store</p>
+            <p>Kajra Bazar, Bihar</p>
+
+            <a href="https://maps.app.goo.gl/nX5iXrq5jx1KouVB8?g_st=aw"
+               target="_blank">
+                <i class="fa-solid fa-map-location-dot"></i>
+                Get Directions
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Suresh Masala. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+
+    </section>
+
+
+
+    <!-- Existing JavaScript -->
+    <script src="script.js"></script>
+    <script src="checkout.js"></script>
+
+</body>
+</html>
